@@ -1,0 +1,33 @@
+.parallax {
+    .container-parallax {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 600px !important;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-image: url(parallax-t10.png);
+    
+        &::after {
+          content: "";
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          z-index: 8;
+          background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0) 0,
+            rgba(0, 0, 0, 0) 70%,
+            #000 100%
+          );
+        }
+    }
+}

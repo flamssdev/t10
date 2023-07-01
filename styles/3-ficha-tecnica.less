@@ -1,0 +1,101 @@
+.ficha {
+    // background: var(--verde-bg);
+    padding: 0 2% 60px;
+
+    .container-ficha {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+
+        .detalhes {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 800px;
+            background-color: var(--verde-claro);
+            box-shadow: 4px 10px 16px 0 rgba(0, 0, 0, 37%);
+            border-radius: 30px;
+            padding: 25px 30px;
+            margin-top: -50px;
+            gap: 20px;
+
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: c;
+                gap: 5px;
+                img {
+                    width: 74px;
+                    height: 68px;
+                }
+                span {
+                    display: block;
+                    max-width: 300px;
+                    width: 100%;
+                    color: var(--branco);
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .drone-ficha {
+            max-width: 900px;
+            width: 100%;
+        }
+
+        .ficha-tecnica {
+            max-width: 600px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+            
+            h2 {
+                font-size: 30px;
+                font-weight: 700;
+                color: var(--branco);
+            }
+
+            ul {
+                li {
+                    list-style-position: inside;
+                    padding: 20px 0;
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: var(--branco);
+                    text-align: justify;
+                }
+            }
+        }
+
+        .botao {
+            cursor: pointer;
+            padding: 15px 40px;
+            background-color: var(--branco);
+            border-radius: 30px;
+            color: var(--verde-botao);
+            font-size: 32px;
+            font-weight: 900;
+            text-decoration: none;
+        }
+    }
+}
+
+@media (max-width: 875px) {
+    .ficha {
+        .container-ficha {
+            .detalhes {
+                max-width: 400px;
+            }
+
+            .botao {
+                padding: 10px 30px;
+                font-size: 24px;
+                font-weight: 700;
+            }
+        }
+    }
+}

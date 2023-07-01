@@ -1,0 +1,51 @@
+.home {
+    padding: 140px 2% 60px;
+    background-color: var(--branco);
+    .container-home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        span {
+            font-size: 36px;
+            font-weight: 500;
+            color: var(--preto);
+        }
+
+        .botao {
+            cursor: pointer;
+            margin-top: 30px;
+            padding: 15px 40px;
+            background-color: var(--verde-botao);
+            border-radius: 30px;
+            color: var(--branco);
+            font-size: 32px;
+            font-weight: 900;
+            text-decoration: none;
+            
+        }
+
+        .drone-home {
+            max-width: 900px;
+            width: 100%;
+        }
+
+    }
+}
+
+
+@media (max-width: 1023px) {
+    .home {
+        padding: 20px 2% 60px;
+
+        .container-home {
+            .botao {
+                padding: 10px 30px;
+                font-size: 24px;
+                font-weight: 700;
+            }
+        }
+    }
+}
